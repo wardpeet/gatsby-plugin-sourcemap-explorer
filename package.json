@@ -1,6 +1,6 @@
 {
   "name": "@wardpeet/gatsby-plugin-sourcemap-explorer",
-  "version": "0.0.0",
+  "version": "0.0.1-0",
   "description": "Plugin that exposes sourcemap stats",
   "main": "index.js",
   "author": "Ward Peeters <ward@coding-tech.com>",
