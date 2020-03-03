@@ -1,0 +1,20 @@
+{
+  "name": "@wardpeet/gatsby-plugin-sourcemap-explorer",
+  "version": "0.0.0",
+  "description": "Plugin that exposes sourcemap stats",
+  "main": "index.js",
+  "author": "Ward Peeters <ward@coding-tech.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.0.0"
+  },
+  "dependencies": {
+    "execa": "^4.0.0",
+    "source-map-explorer": "^2.3.1"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "source-map-explorer"
+  ]
+}
