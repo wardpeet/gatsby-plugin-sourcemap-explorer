@@ -1,11 +1,13 @@
 const execa = require("execa");
 
-exports.onPostBuild = async ({ reporter }) => {
+exports.onPostBuild = async ({ reporter, store }) => {
+  const program = store.getState().program;
+
   let stats;
   try {
-    stats = require("./public/webpack.stats.json");
+    stats = require(`${program.directory}/public/webpack.stats.json`);
   } catch (err) {
-    reporter.warnt('Cannot get webpack stats, try running "gatsby clean"');
+    reporter.warn('Cannot get webpack stats, try running "gatsby clean"');
     return;
   }
 
